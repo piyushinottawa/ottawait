@@ -355,13 +355,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact */}
-      <section id="contact" className="py-20 bg-slate-900 text-white">
-  <div className="max-w-4xl mx-auto px-6 text-center">
+      {/* Contact + Footer */}
+<section id="contact" className="py-20 bg-slate-900 text-white">
+  <div className="max-w-5xl mx-auto px-6 text-center">
     <h2 className="text-3xl md:text-4xl font-bold">
       Ready to Discuss Your Next Technology Initiative?
     </h2>
-    <p className="mt-5 text-lg leading-relaxed text-slate-300">
+
+    <p className="mt-5 text-lg leading-relaxed text-slate-300 max-w-3xl mx-auto">
       Whether you need technology strategy, cybersecurity expertise, cloud
       transformation, project leadership, or SaaS development, OttawaIT can help.
     </p>
@@ -384,35 +385,14 @@ export default function Home() {
       </a>
     </div>
 
-    <p className="mt-6 text-slate-300">
-      Ottawa, Ontario, Canada • info@ottawait.net
-    </p>
-  </div>
-</section>
-
-      {/* Footer */}
-      <footer className="bg-slate-950 text-white py-10">
-  <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between gap-8">
-    <div>
-      <Image
-        src="/images/logo.png"
-        alt="OttawaIT Logo"
-        width={220}
-        height={80}
-      />
-      <p className="mt-4 text-slate-300">
-        Technology Strategy • Cybersecurity • Cloud Solutions • SaaS Development
-      </p>
-      <p className="mt-3 text-slate-400">Ottawa, Ontario, Canada</p>
-    </div>
-
-    <div className="text-slate-300">
-      <p>Email: info@ottawait.net</p>
-      <p className="mt-3">MBA • CISSP • CISM • PMP • ITIL • SAFe</p>
-      <p className="mt-3">© 2026 OttawaIT. All Rights Reserved.</p>
+    <div className="mt-10 border-t border-white/10 pt-8 text-slate-300 text-sm md:text-base">
+      <p>OttawaIT • Technology Strategy • Cybersecurity • Cloud Solutions • SaaS Development</p>
+      <p className="mt-3">1-30 Concourse Gate, Ottawa, Ontario, Canada • info@ottawait.net</p>
+            <p className="mt-3 text-slate-400">© 2026 OttawaIT. All Rights Reserved.</p>
     </div>
   </div>
-</footer>
+  </section>
+  {/* Footer */}
     </main>
   );
 }
