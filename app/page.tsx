@@ -37,7 +37,7 @@ const industries = [
   "Manufacturing",
   "Healthcare",
   "Retail & Distribution",
-  "Construction & Infrastructure",
+  "Supply Chain & Operations",
   "Small & Mid-Sized Businesses",
 ];
 
@@ -85,6 +85,9 @@ export default function Home() {
             <a href="#industries" className="hover:text-blue-600">
               Industries
             </a>
+            <a href="#blog" className="hover:text-blue-600">
+              Blog
+            </a>
             <a href="#contact" className="hover:text-blue-600">
               Contact
             </a>
@@ -107,7 +110,7 @@ export default function Home() {
               IT Strategy • Cybersecurity • Cloud Transformation • SaaS Solutions
             </p>
 
-            <h1 className="text-5xl md:text-7xl font-bold text-slate-950 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-950 leading-tight">
               Transforming Technology Into Business Value
             </h1>
 
@@ -228,11 +231,13 @@ export default function Home() {
             <h2 className="text-4xl md:text-5xl font-bold mt-4">
               SynexaOne
             </h2>
-            <p className="mt-6 text-xl text-slate-700 leading-relaxed">
-              SynexaOne is an integrated business platform combining CRM,
-              Supply Chain Management, Document Management, workflow automation,
-              analytics, risk, and compliance capabilities.
-            </p>
+            <p className="mt-6 text-lg text-slate-700 leading-relaxed">
+  SynexaOne is an integrated business platform with three core modules:
+  Customer Relationship Management (CRM), Supply Chain Management (SCM), and Document
+  Management (DM). It also supports workflow automation, analytics and reporting,
+  risk management, compliance management, audit management, and business
+  continuity capabilities.
+</p>
 
             <div className="mt-8 grid sm:grid-cols-2 gap-4 text-lg text-slate-700">
               <div>• CRM</div>
@@ -351,43 +356,63 @@ export default function Home() {
       </section>
 
       {/* Contact */}
-      <section id="contact" className="py-24 bg-blue-600 text-white">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold">
-            Ready to Discuss Your Next Technology Initiative?
-          </h2>
-          <p className="mt-6 text-xl leading-relaxed text-blue-50">
-            Whether you need technology strategy, cybersecurity expertise,
-            cloud transformation, project leadership, or SaaS development,
-            OttawaIT can help.
-          </p>
+      <section id="contact" className="py-20 bg-slate-900 text-white">
+  <div className="max-w-4xl mx-auto px-6 text-center">
+    <h2 className="text-3xl md:text-4xl font-bold">
+      Ready to Discuss Your Next Technology Initiative?
+    </h2>
+    <p className="mt-5 text-lg leading-relaxed text-slate-300">
+      Whether you need technology strategy, cybersecurity expertise, cloud
+      transformation, project leadership, or SaaS development, OttawaIT can help.
+    </p>
 
-          <a
-            href="mailto:info@ottawait.net"
-            className="mt-10 inline-flex rounded-full bg-white px-8 py-4 text-lg font-semibold text-blue-700 hover:bg-blue-50 transition"
-          >
-            Contact OttawaIT
-          </a>
-        </div>
-      </section>
+    <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+      <a
+        href="https://calendly.com/YOUR-CALENDLY-LINK"
+        target="_blank"
+        rel="noreferrer"
+        className="rounded-full bg-white px-7 py-3 text-base font-semibold text-slate-900 hover:bg-slate-100 transition"
+      >
+        Schedule a Consultation
+      </a>
+
+      <a
+        href="mailto:info@ottawait.net"
+        className="rounded-full border border-white/30 px-7 py-3 text-base font-semibold text-white hover:bg-white/10 transition"
+      >
+        Email OttawaIT
+      </a>
+    </div>
+
+    <p className="mt-6 text-slate-300">
+      Ottawa, Ontario, Canada • info@ottawait.net
+    </p>
+  </div>
+</section>
 
       {/* Footer */}
-      <footer className="bg-slate-950 text-white py-12">
-        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between gap-8">
-          <div>
-            <h3 className="text-2xl font-bold">OttawaIT</h3>
-            <p className="mt-3 text-slate-300">
-              Technology Strategy • Cybersecurity • Cloud Solutions • SaaS Development
-            </p>
-            <p className="mt-3 text-slate-400">Ottawa, Ontario, Canada</p>
-          </div>
+      <footer className="bg-slate-950 text-white py-10">
+  <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between gap-8">
+    <div>
+      <Image
+        src="/images/logo.png"
+        alt="OttawaIT Logo"
+        width={220}
+        height={80}
+      />
+      <p className="mt-4 text-slate-300">
+        Technology Strategy • Cybersecurity • Cloud Solutions • SaaS Development
+      </p>
+      <p className="mt-3 text-slate-400">Ottawa, Ontario, Canada</p>
+    </div>
 
-          <div className="text-slate-300">
-            <p>Email: info@ottawait.net</p>
-            <p className="mt-3">© 2026 OttawaIT. All Rights Reserved.</p>
-          </div>
-        </div>
-      </footer>
+    <div className="text-slate-300">
+      <p>Email: info@ottawait.net</p>
+      <p className="mt-3">MBA • CISSP • CISM • PMP • ITIL • SAFe</p>
+      <p className="mt-3">© 2026 OttawaIT. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
     </main>
   );
 }
