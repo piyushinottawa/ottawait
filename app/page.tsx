@@ -74,40 +74,37 @@ export default function Home() {
       </header>
 
       <section className="mx-auto grid max-w-7xl items-center gap-16 px-6 py-20 md:grid-cols-2">
-        <div>
-          <p className="mb-4 font-semibold text-blue-700">
-            Cloud • Cybersecurity • SaaS • Application Development
-          </p>
+        <div className="max-w-3xl">
+  <p className="text-blue-600 font-semibold text-lg md:text-xl mb-6">
+    IT Strategy • Cybersecurity • Cloud Transformation • SaaS Solutions
+  </p>
 
-          <h1 className="text-4xl font-bold leading-tight text-slate-950 md:text-6xl">
-            Consulting, SaaS Solutions & Digital Transformation
-          </h1>
+  <h1 className="text-5xl md:text-7xl font-bold text-slate-950 leading-tight">
+    Transforming Technology Into Business Value
+  </h1>
 
-          <p className="mt-6 max-w-xl text-lg leading-8 text-slate-600">
-            Helping organizations modernize cloud infrastructure, strengthen cybersecurity,
-            build secure SaaS solutions, and deliver end-to-end technology initiatives.
-          </p>
+  <p className="mt-8 text-xl md:text-2xl text-slate-700 leading-relaxed">
+    OttawaIT helps organizations modernize technology, strengthen cybersecurity,
+    reduce risk, and deliver successful business outcomes through strategic
+    advisory, cloud solutions, program leadership, and secure SaaS development.
+  </p>
 
-          <p className="mt-5 font-semibold text-slate-800">
-            MBA • CISSP • CISM • PMP • ITIL • SAFe
-          </p>
+  <div className="mt-10 flex flex-col sm:flex-row gap-4">
+    <a
+      href="#contact"
+      className="inline-flex items-center justify-center rounded-full bg-blue-600 px-8 py-4 text-lg font-semibold text-white shadow-lg hover:bg-blue-700 transition"
+    >
+      Schedule a Consultation
+    </a>
 
-          <div className="mt-8 flex flex-wrap gap-4">
-            <a
-              href="mailto:info@ottawait.net?subject=OttawaIT Consultation Request"
-              className="rounded-full bg-blue-700 px-6 py-3 font-semibold text-white"
-            >
-              Book a Consultation
-            </a>
-            <a
-              href="#services"
-              className="rounded-full border border-blue-700 px-6 py-3 font-semibold text-blue-700"
-            >
-              View Services
-            </a>
-          </div>
-        </div>
-
+    <a
+      href="mailto:info@ottawait.net"
+      className="inline-flex items-center justify-center rounded-full border border-slate-300 px-8 py-4 text-lg font-semibold text-slate-900 hover:bg-slate-100 transition"
+    >
+      Contact OttawaIT
+    </a>
+  </div>
+</div>
         <div className="flex justify-center">
           <Image
             src="/images/piyush.png"
@@ -142,21 +139,20 @@ export default function Home() {
       </section>
 
       <section id="services" className="bg-slate-50 px-6 py-16">
-        <div className="mx-auto max-w-7xl">
-          <p className="text-center font-semibold text-blue-700">Services</p>
-          <h2 className="mt-2 text-center text-4xl font-bold text-slate-950">
-            OttawaIT Advisory & Development Services
-          </h2>
+<div className="text-center mb-16">
+  <p className="text-blue-600 font-semibold text-lg uppercase tracking-wide">
+    Services
+  </p>
 
-          <div className="mt-12 grid gap-6 md:grid-cols-4">
-            {services.map(([title, text]) => (
-              <div key={title} className="rounded-2xl bg-white p-7 shadow-sm ring-1 ring-slate-200">
-                <h3 className="text-xl font-bold text-blue-800">{title}</h3>
-                <p className="mt-4 leading-7 text-slate-600">{text}</p>
-              </div>
-            ))}
-          </div>
-        </div>
+  <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mt-4">
+    Advisory & Development Services
+  </h2>
+
+  <p className="mt-6 text-xl text-slate-600 max-w-4xl mx-auto">
+    OttawaIT helps organizations modernize technology, strengthen cybersecurity,
+    deliver cloud transformation initiatives, and develop scalable SaaS solutions.
+  </p>
+</div>
       </section>
 
       <section id="solutions" className="px-6 py-16">
@@ -196,8 +192,6 @@ export default function Home() {
         program leadership, and SaaS solutions.
       </p>
     </div>
-
-```
 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
   {industries.map((industry) => (
     <div
