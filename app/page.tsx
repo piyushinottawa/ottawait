@@ -20,11 +20,36 @@ const services = [
 ];
 
 const industries = [
-  "Government",
-  "Healthcare",
-  "Financial Services",
-  "Professional Services",
-  "Technology",
+{
+title: "Financial Services",
+description:
+"Supporting financial institutions with cybersecurity, risk management, cloud transformation, and technology modernization initiatives.",
+},
+{
+title: "Insurance",
+description:
+"Helping insurers strengthen governance, information risk management, compliance, and digital transformation programs.",
+},
+{
+title: "Government & Public Sector",
+description:
+"Delivering technology strategy, cybersecurity, cloud solutions, and program leadership for public sector organizations.",
+},
+{
+title: "Manufacturing",
+description:
+"Improving operational efficiency through supply chain optimization, cloud solutions, and business process automation.",
+},
+{
+title: "Healthcare",
+description:
+"Supporting healthcare organizations with security, privacy, compliance, and digital transformation initiatives.",
+},
+{
+title: "Retail & Distribution",
+description:
+"Enhancing supply chain visibility, document management, workflow automation, and operational performance.",
+},
 ];
 
 export default function Home() {
@@ -159,20 +184,39 @@ export default function Home() {
       </section>
 
       <section id="industries" className="bg-slate-50 px-6 py-14">
-        <div className="mx-auto max-w-7xl text-center">
-          <p className="font-semibold text-blue-700">Industries</p>
-          <h2 className="mt-2 text-4xl font-bold text-slate-950">
-            Supporting Modern Organizations
-          </h2>
+        <section id="industries" className="py-24 bg-white">
+  <div className="max-w-7xl mx-auto px-6">
+    <div className="text-center mb-16">
+      <h2 className="text-4xl font-bold text-slate-900">
+        Industries Served
+      </h2>
+      <p className="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">
+        OttawaIT partners with organizations across multiple industries to
+        deliver technology strategy, cybersecurity, cloud transformation,
+        program leadership, and SaaS solutions.
+      </p>
+    </div>
 
-          <div className="mt-10 grid gap-4 md:grid-cols-5">
-            {industries.map((item) => (
-              <div key={item} className="rounded-xl bg-white p-6 font-semibold shadow-sm ring-1 ring-slate-200">
-                {item}
-              </div>
-            ))}
-          </div>
-        </div>
+```
+<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+  {industries.map((industry) => (
+    <div
+      key={industry.title}
+      className="bg-slate-50 rounded-xl p-8 border border-slate-200 hover:shadow-lg transition"
+    >
+      <h3 className="text-xl font-semibold text-slate-900 mb-3">
+        {industry.title}
+      </h3>
+      <p className="text-slate-600">
+        {industry.description}
+      </p>
+    </div>
+  ))}
+</div>
+```
+
+  </div>
+</section>
       </section>
 
       <section id="contact" className="bg-blue-950 px-6 py-20 text-white">
