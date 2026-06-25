@@ -24,12 +24,18 @@ const services = [
 ];
 
 const whyOttawaIT = [
-  "20+ Years Technology Leadership",
+  "10+ Years Technology Leadership",
+  "MBA Education",
+  "CISSP Certified",
+  "CISM Certified",
+  "PMP Certified",
+  "ITIL & SAFe Certified",
   "Cybersecurity & Risk Management Expertise",
   "Cloud Transformation Experience",
   "Enterprise Program Delivery",
   "SaaS Product Development",
   "Business-Focused Technology Strategy",
+  "Government & Enterprise Experience",
 ];
 
 const industries = [
@@ -99,6 +105,14 @@ export default function Home() {
           >
             Book Consultation
           </a>
+          <a
+  href="https://www.linkedin.com/in/impiyushagarwal/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="hover:text-blue-600 transition"
+>
+  LinkedIn
+</a>
         </div>
       </header>
 
@@ -164,7 +178,7 @@ export default function Home() {
               Trusted Technology Leadership
             </h2>
             <p className="mt-6 text-xl text-slate-600 max-w-4xl mx-auto">
-              With over 20 years of experience leading enterprise technology,
+              With over 10 years of experience leading enterprise technology,
               cybersecurity, cloud transformation, and strategic initiatives,
               OttawaIT helps organizations align technology investments with
               business objectives.
@@ -177,7 +191,7 @@ export default function Home() {
                 key={item}
                 className="rounded-2xl border border-slate-200 bg-slate-50 p-8 shadow-sm"
               >
-                <h3 className="text-xl font-bold text-slate-900">{item}</h3>
+                <h3 className="text-lg font-bold text-slate-900">{item}</h3>
               </div>
             ))}
           </div>
@@ -288,7 +302,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {industries.map((industry) => (
               <div
                 key={industry}
