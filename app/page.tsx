@@ -152,50 +152,48 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative flex flex-col items-center">
-
-  <Image
-    src="/images/piyush.png"
-    alt="Piyush Agarwal"
-    width={440}
-    height={440}
-    className="rounded-full border-8 border-white shadow-xl"
-    priority
-  />
-
-  {/* Credentials */}
-  <div className="mt-6 grid grid-cols-2 gap-3 w-full max-w-md">
-
-    <div className="bg-white rounded-xl p-4 shadow-sm text-center">
-      <p className="font-semibold text-slate-900">
-        10+ Years Experience
-      </p>
-    </div>
-
-    <div className="bg-white rounded-xl p-4 shadow-sm text-center">
-      <p className="font-semibold text-slate-900">
-        Enterprise & Government Experience
-      </p>
-    </div>
-
-    <div className="bg-white rounded-xl p-4 shadow-sm text-center">
-      <p className="font-semibold text-slate-900">
-        Cybersecurity & Cloud Leadership
-      </p>
-    </div>
-
-    <div className="bg-white rounded-xl p-4 shadow-sm text-center">
-      <p className="font-semibold text-slate-900">
-        SaaS Product Development
-      </p>
-    </div>
-
+          <div className="flex flex-col items-center lg:items-end">
+  <div className="rounded-full bg-white p-3 shadow-2xl ring-1 ring-slate-200">
+    <Image
+      src="/images/piyush.png"
+      alt="Piyush Agarwal"
+      width={420}
+      height={420}
+      className="rounded-full object-cover"
+      priority
+    />
   </div>
 
-  <p className="mt-4 text-sm text-slate-600 text-center">
-    MBA • CISSP • CISM • PMP • ITIL • SAFe
-  </p>
+  <div className="mt-8 grid grid-cols-2 gap-4 w-full max-w-lg">
+    <div className="rounded-2xl bg-white p-5 shadow-md border border-slate-100">
+      <p className="text-2xl font-bold text-blue-600">10+</p>
+      <p className="text-sm font-semibold text-slate-700">Years Experience</p>
+    </div>
 
+    <div className="rounded-2xl bg-white p-5 shadow-md border border-slate-100">
+      <p className="text-base font-bold text-slate-900">Enterprise & Government</p>
+      <p className="text-sm text-slate-600">Experience</p>
+    </div>
+
+    <div className="rounded-2xl bg-white p-5 shadow-md border border-slate-100">
+      <p className="text-base font-bold text-slate-900">Cybersecurity & Cloud</p>
+      <p className="text-sm text-slate-600">Leadership</p>
+    </div>
+
+    <div className="rounded-2xl bg-white p-5 shadow-md border border-slate-100">
+      <p className="text-base font-bold text-slate-900">SaaS Product</p>
+      <p className="text-sm text-slate-600">Development</p>
+    </div>
+  </div>
+
+  <p className="mt-5 text-sm font-medium text-slate-600 tracking-wide">
+    MBA <span className="mx-2 text-slate-300">|</span>
+    CISSP <span className="mx-2 text-slate-300">|</span>
+    CISM <span className="mx-2 text-slate-300">|</span>
+    PMP <span className="mx-2 text-slate-300">|</span>
+    ITIL <span className="mx-2 text-slate-300">|</span>
+    SAFe
+  </p>
 </div>
 </div>
 </section>
