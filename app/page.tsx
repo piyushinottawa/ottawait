@@ -155,7 +155,7 @@ export default function Home() {
           <div className="relative flex flex-col items-center">
 
   <Image
-    src="/images/piyush.jpg"
+    src="/images/piyush.png"
     alt="Piyush Agarwal"
     width={440}
     height={440}
