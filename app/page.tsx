@@ -152,52 +152,52 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex justify-center lg:justify-end">
-            <div className="rounded-full bg-white p-4 shadow-2xl">
-              <Image
-                src="/images/piyush.png"
-                alt="Piyush Agarwal"
-                width={440}
-                height={440}
-                className="rounded-full"
-                priority
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+          <div className="relative flex flex-col items-center">
 
-      {/* Why OttawaIT */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <p className="text-blue-600 font-semibold text-lg uppercase tracking-wide">
-              Why OttawaIT
-            </p>
-            <h2 className="text-4xl md:text-5xl font-bold mt-4">
-              Trusted Technology Leadership
-            </h2>
-            <p className="mt-6 text-xl text-slate-600 max-w-4xl mx-auto">
-              With over 10 years of experience leading enterprise technology,
-              cybersecurity, cloud transformation, and strategic initiatives,
-              OttawaIT helps organizations align technology investments with
-              business objectives.
-            </p>
-          </div>
+  <Image
+    src="/images/piyush.jpg"
+    alt="Piyush Agarwal"
+    width={500}
+    height={500}
+    className="rounded-full border-8 border-white shadow-xl"
+  />
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {whyOttawaIT.map((item) => (
-              <div
-                key={item}
-                className="rounded-2xl border border-slate-200 bg-slate-50 p-8 shadow-sm"
-              >
-                <h3 className="text-lg font-bold text-slate-900">{item}</h3>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+  {/* Credentials */}
+  <div className="mt-6 grid grid-cols-2 gap-3 w-full max-w-md">
 
+    <div className="bg-white rounded-xl p-4 shadow-sm text-center">
+      <p className="font-semibold text-slate-900">
+        10+ Years Experience
+      </p>
+    </div>
+
+    <div className="bg-white rounded-xl p-4 shadow-sm text-center">
+      <p className="font-semibold text-slate-900">
+        Enterprise & Government Experience
+      </p>
+    </div>
+
+    <div className="bg-white rounded-xl p-4 shadow-sm text-center">
+      <p className="font-semibold text-slate-900">
+        Cybersecurity & Cloud Leadership
+      </p>
+    </div>
+
+    <div className="bg-white rounded-xl p-4 shadow-sm text-center">
+      <p className="font-semibold text-slate-900">
+        SaaS Product Development
+      </p>
+    </div>
+
+  </div>
+
+  <p className="mt-4 text-sm text-slate-600 text-center">
+    MBA • CISSP • CISM • PMP • ITIL • SAFe
+  </p>
+
+</div>
+</div>
+</section>
       {/* Services */}
       <section id="services" className="py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-6">
