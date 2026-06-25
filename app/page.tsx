@@ -157,9 +157,10 @@ export default function Home() {
   <Image
     src="/images/piyush.jpg"
     alt="Piyush Agarwal"
-    width={500}
-    height={500}
+    width={440}
+    height={440}
     className="rounded-full border-8 border-white shadow-xl"
+    priority
   />
 
   {/* Credentials */}
@@ -351,7 +352,7 @@ export default function Home() {
       <section className="py-20 bg-slate-950 text-white">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8 text-center">
           <div>
-            <div className="text-5xl font-bold text-blue-400">20+</div>
+            <div className="text-5xl font-bold text-blue-400">10+</div>
             <p className="mt-3 text-lg text-slate-300">Years Experience</p>
           </div>
           <div>
