@@ -116,105 +116,91 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-white via-slate-50 to-blue-50">
-        <div className="max-w-7xl mx-auto px-6 py-24 lg:py-32 grid lg:grid-cols-2 gap-16 items-center">
-          <div>
-            <p className="text-blue-600 font-semibold text-lg md:text-xl mb-6">
-              IT Strategy • Cybersecurity • Cloud Transformation • SaaS Solutions
-            </p>
+     {/* Hero */}
+<section className="relative overflow-hidden bg-gradient-to-br from-white via-slate-50 to-sky-50">
+  <div className="max-w-7xl mx-auto px-6 py-20 lg:py-28 grid lg:grid-cols-2 gap-14 items-center">
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-950 leading-tight">
-              Transforming Technology Into Business Value
-            </h1>
+    {/* Left Side */}
+    <div>
+      <p className="text-sky-700 font-semibold text-base md:text-lg mb-5">
+        Technology Strategy • Cybersecurity • Cloud Transformation • SaaS Solutions
+      </p>
 
-            <p className="mt-8 text-xl md:text-2xl text-slate-700 leading-relaxed">
-              OttawaIT helps organizations modernize technology, strengthen
-              cybersecurity, reduce risk, and deliver successful business
-              outcomes through strategic advisory, cloud solutions, program
-              leadership, and secure SaaS development.
-            </p>
+      <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-950 leading-tight">
+        Transforming Technology Into Business Value
+      </h1>
 
-            <div className="mt-10 flex flex-col sm:flex-row gap-4">
-              <a
-                href="#contact"
-                className="inline-flex items-center justify-center rounded-full bg-blue-600 px-8 py-4 text-lg font-semibold text-white shadow-lg hover:bg-blue-700 transition"
-              >
-                Schedule a Consultation
-              </a>
+      <p className="mt-7 text-lg md:text-xl text-slate-700 leading-relaxed">
+        OttawaIT helps organizations modernize technology, strengthen cybersecurity,
+        reduce risk, and deliver successful business outcomes through strategic
+        advisory, cloud solutions, program leadership, and secure application development.
+      </p>
 
-              <a
-                href="mailto:info@ottawait.net"
-                className="inline-flex items-center justify-center rounded-full border border-slate-300 px-8 py-4 text-lg font-semibold text-slate-900 hover:bg-slate-100 transition"
-              >
-                Contact OttawaIT
-              </a>
-            </div>
-          </div>
+      <div className="mt-9 flex flex-col sm:flex-row gap-4">
+        <a
+          href="#contact"
+          className="inline-flex items-center justify-center rounded-full bg-sky-700 px-7 py-3 text-base font-semibold text-white shadow-lg hover:bg-sky-800 transition"
+        >
+          Schedule a Consultation
+        </a>
 
-          <div className="flex flex-col items-center lg:items-end">
-  <div className="rounded-full bg-white p-3 shadow-2xl ring-1 ring-slate-200">
-    <Image
-      src="/images/piyush.png"
-      alt="Piyush Agarwal"
-      width={420}
-      height={420}
-      className="rounded-full object-cover"
-      priority
-    />
+        <a
+          href="#solutions"
+          className="inline-flex items-center justify-center rounded-full border border-slate-300 px-7 py-3 text-base font-semibold text-slate-900 hover:bg-slate-100 transition"
+        >
+          Explore SynexaOne
+        </a>
+      </div>
+    </div>
+
+    {/* Right Side */}
+    <div className="flex flex-col items-center">
+
+      <div className="rounded-full bg-white p-3 shadow-2xl ring-1 ring-slate-200">
+        <Image
+          src="/images/piyush.png"
+          alt="Piyush Agarwal"
+          width={420}
+          height={420}
+          className="rounded-full object-cover"
+          priority
+        />
+      </div>
+
+      <div className="mt-6 text-center max-w-xl">
+        <p className="text-base text-slate-700 leading-relaxed font-medium">
+          10+ Years Executive Leadership • 25+ Years Cross-Industry Experience • Government, Financial Services & Enterprise • Cybersecurity, Technology, Project & Program Leadership
+        </p>
+
+        <p className="mt-4 text-sm text-slate-600">
+          MBA • CISSP • CISM • PMP • ITIL • SAFe
+        </p>
+      </div>
+
+    </div>
+
   </div>
-
-  <div className="mt-8 grid grid-cols-2 gap-4 w-full max-w-lg">
-    <div className="rounded-2xl bg-white p-5 shadow-md border border-slate-100">
-      <p className="text-2xl font-bold text-blue-600">10+</p>
-      <p className="text-sm font-semibold text-slate-700">Years Experience</p>
-    </div>
-
-    <div className="rounded-2xl bg-white p-5 shadow-md border border-slate-100">
-      <p className="text-base font-bold text-slate-900">Enterprise & Government</p>
-      <p className="text-sm text-slate-600">Experience</p>
-    </div>
-
-    <div className="rounded-2xl bg-white p-5 shadow-md border border-slate-100">
-      <p className="text-base font-bold text-slate-900">Cybersecurity & Cloud</p>
-      <p className="text-sm text-slate-600">Leadership</p>
-    </div>
-
-    <div className="rounded-2xl bg-white p-5 shadow-md border border-slate-100">
-      <p className="text-base font-bold text-slate-900">SaaS Product</p>
-      <p className="text-sm text-slate-600">Development</p>
-    </div>
-  </div>
-
-  <p className="mt-5 text-sm font-medium text-slate-600 tracking-wide">
-    MBA <span className="mx-2 text-slate-300">|</span>
-    CISSP <span className="mx-2 text-slate-300">|</span>
-    CISM <span className="mx-2 text-slate-300">|</span>
-    PMP <span className="mx-2 text-slate-300">|</span>
-    ITIL <span className="mx-2 text-slate-300">|</span>
-    SAFe
-  </p>
-</div>
-</div>
 </section>
-      {/* Services */}
-      <section id="services" className="py-24 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <p className="text-blue-600 font-semibold text-lg uppercase tracking-wide">
-              Services
-            </p>
+     
+{/* Services */}
+<section id="services" className="py-24 bg-slate-50">
+  <div className="max-w-7xl mx-auto px-6">
 
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mt-4">
-              Advisory & Development Services
-            </h2>
+    <div className="text-center mb-16">
+      <p className="text-blue-600 font-semibold text-lg uppercase tracking-wide">
+        Services
+      </p>
 
-            <p className="mt-6 text-xl text-slate-600 max-w-4xl mx-auto">
-              OttawaIT helps organizations modernize technology, strengthen
-              cybersecurity, deliver cloud transformation initiatives, and
-              develop scalable SaaS solutions.
-            </p>
-          </div>
+      <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mt-4">
+        Advisory & Development Services
+      </h2>
+
+      <p className="mt-6 text-xl text-slate-600 max-w-4xl mx-auto">
+        OttawaIT helps organizations modernize technology, strengthen
+        cybersecurity, deliver cloud transformation initiatives, and
+        develop scalable SaaS solutions.
+      </p>
+    </div>
 
           <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8">
             {services.map((service) => (
