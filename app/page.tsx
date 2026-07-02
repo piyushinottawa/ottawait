@@ -221,55 +221,106 @@ export default function Home() {
       </section>
 
       {/* SynexaOne */}
-      <section id="solutions" className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
-          <div>
-            <p className="text-blue-600 font-semibold text-lg uppercase tracking-wide">
-              SaaS Solutions
-            </p>
-            <h2 className="text-4xl md:text-5xl font-bold mt-4">
-              SynexaOne
-            </h2>
-            <p className="mt-6 text-lg text-slate-700 leading-relaxed">
-  SynexaOne is an integrated business platform with three core modules:
-  Customer Relationship Management (CRM), Supply Chain Management (SCM), and Document
-  Management (DM). It also supports workflow automation, analytics and reporting,
-  risk management, compliance management, audit management, and business
-  continuity capabilities.
-</p>
+{/* SaaS Solutions */}
+<section id="solutions" className="py-24 bg-white">
+  <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
 
-            <div className="mt-8 grid sm:grid-cols-2 gap-4 text-lg text-slate-700">
-              <div>• CRM</div>
-              <div>• Supply Chain Management</div>
-              <div>• Document Management</div>
-              <div>• Workflow Automation</div>
-              <div>• Risk & Compliance</div>
-              <div>• Analytics & Reporting</div>
-            </div>
+    {/* Left */}
+    <div>
+      <p className="text-blue-600 font-semibold text-lg uppercase tracking-wide">
+        SaaS Solutions
+      </p>
 
-            <a
-              href="https://www.synexaone.com"
-              target="_blank"
-              rel="noreferrer"
-              className="mt-10 inline-flex rounded-full bg-blue-600 px-8 py-4 text-lg font-semibold text-white hover:bg-blue-700 transition"
-            >
-              Learn More About SynexaOne
-            </a>
-          </div>
+      <h2 className="text-5xl md:text-6xl font-bold text-slate-900 mt-4">
+        SynexaOne
+      </h2>
 
-          <div className="rounded-3xl bg-gradient-to-br from-blue-600 to-slate-900 p-10 text-white shadow-2xl">
-            <h3 className="text-3xl font-bold mb-6">
-              Consulting + Product Development
-            </h3>
-            <p className="text-xl leading-relaxed text-blue-50">
-              OttawaIT does more than advise. We design and build secure,
-              cloud-native business platforms that improve operations,
-              governance, visibility, and decision-making.
-            </p>
-          </div>
+      <p className="mt-8 text-xl leading-relaxed text-slate-700">
+        SynexaOne is an AI-powered unified enterprise platform designed to
+        streamline operations through four integrated modules:
+        <strong> CRM</strong>,
+        <strong> SCM</strong>,
+        <strong> DMS</strong>, and
+        <strong> GRC</strong>.
+        The platform also delivers workflow automation, analytics & reporting,
+        AI-powered insights, enterprise security, and cloud-native scalability.
+      </p>
+
+      <div className="grid md:grid-cols-2 gap-6 mt-10">
+
+        <ul className="space-y-4 text-lg text-slate-700">
+          <li>✔ Customer Relationship Management (CRM)</li>
+          <li>✔ Supply Chain Management (SCM)</li>
+          <li>✔ Document Management System (DMS)</li>
+        </ul>
+
+        <ul className="space-y-4 text-lg text-slate-700">
+          <li>✔ Governance, Risk & Compliance (GRC)</li>
+          <li>✔ Workflow Automation</li>
+          <li>✔ Analytics & AI Intelligence</li>
+        </ul>
+
+      </div>
+
+      <a
+        href="https://www.synexaone.com"
+        target="_blank"
+        rel="noreferrer"
+        className="mt-10 inline-flex rounded-full bg-blue-600 px-8 py-4 text-lg font-semibold text-white hover:bg-blue-700 transition"
+      >
+        Explore SynexaOne
+      </a>
+    </div>
+
+    {/* Right */}
+    <div className="rounded-3xl bg-gradient-to-br from-blue-600 to-slate-900 p-10 text-white shadow-2xl">
+
+      <h3 className="text-3xl font-bold mb-6">
+        Enterprise SaaS Platform
+      </h3>
+
+      <p className="text-xl leading-relaxed text-blue-50">
+        SynexaOne combines customer management, supply chain operations,
+        document management, and governance into a single secure,
+        cloud-native platform powered by AI and Python services.
+      </p>
+
+      <div className="grid grid-cols-2 gap-4 mt-10">
+
+        <div className="rounded-xl bg-white/10 p-4">
+          <h4 className="font-semibold">Cloud Native</h4>
+          <p className="text-blue-100 text-sm mt-2">
+            AWS • Next.js • PostgreSQL
+          </p>
         </div>
-      </section>
 
+        <div className="rounded-xl bg-white/10 p-4">
+          <h4 className="font-semibold">AI Powered</h4>
+          <p className="text-blue-100 text-sm mt-2">
+            Python • Bedrock • Textract
+          </p>
+        </div>
+
+        <div className="rounded-xl bg-white/10 p-4">
+          <h4 className="font-semibold">Multi-Tenant</h4>
+          <p className="text-blue-100 text-sm mt-2">
+            Enterprise SaaS Architecture
+          </p>
+        </div>
+
+        <div className="rounded-xl bg-white/10 p-4">
+          <h4 className="font-semibold">Secure by Design</h4>
+          <p className="text-blue-100 text-sm mt-2">
+            Zero Trust • RBAC • MFA
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
       {/* Industries */}
       <section id="industries" className="py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-6">
