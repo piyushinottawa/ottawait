@@ -69,8 +69,8 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white text-slate-950">
       {/* Header */}
-      <header className="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-100">
-        <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+<header className="sticky top-0 z-50 bg-white border-b">
+  <div className="mx-auto max-w-7xl h-20 px-6 flex items-center justify-between">
           <a href="#" className="flex items-center">
             <Image
               src="/images/logo.png"
@@ -222,8 +222,8 @@ export default function Home() {
 
       {/* SynexaOne */}
 {/* SaaS Solutions */}
-<section id="solutions" className="py-24 bg-white">
-  <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+<section id="solutions" className="py-16 bg-white">
+  <div className="mx-auto max-w-7xl px-6 grid lg:grid-cols-2 gap-12 items-center">
 
     {/* Left */}
     <div>
@@ -322,36 +322,42 @@ export default function Home() {
   </div>
 </section>
       {/* Industries */}
-      <section id="industries" className="py-24 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <p className="text-blue-600 font-semibold text-lg uppercase tracking-wide">
-              Industries
-            </p>
-            <h2 className="text-4xl md:text-5xl font-bold mt-4">
-              Industries Served
-            </h2>
-            <p className="mt-6 text-xl text-slate-600 max-w-4xl mx-auto">
-              OttawaIT supports organizations where technology modernization,
-              cybersecurity, cloud transformation, and operational efficiency
-              are business priorities.
-            </p>
-          </div>
+<section id="industries" className="bg-slate-50 py-16">
+  <div className="mx-auto max-w-6xl px-6 text-center">
+    <p className="text-sm font-bold uppercase tracking-wide text-blue-600">
+      Industries
+    </p>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {industries.map((industry) => (
-              <div
-                key={industry}
-                className="rounded-2xl bg-white border border-slate-200 p-8 shadow-sm"
-              >
-                <h3 className="text-2xl font-bold text-slate-900">
-                  {industry}
-                </h3>
-              </div>
-            ))}
-          </div>
+    <h2 className="mt-3 text-4xl font-bold text-slate-950">
+      Industries Served
+    </h2>
+
+    <p className="mx-auto mt-5 max-w-3xl text-lg text-slate-600">
+      OttawaIT supports organizations where technology modernization, cybersecurity,
+      cloud transformation, and operational efficiency are business priorities.
+    </p>
+
+    <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {[
+        "Government & Public Sector",
+        "Manufacturing",
+        "Healthcare",
+        "Retail & Distribution",
+        "Supply Chain & Operations",
+        "Small & Mid-Sized Businesses",
+      ].map((industry) => (
+        <div
+          key={industry}
+          className="flex min-h-[130px] items-center rounded-2xl border border-slate-200 bg-white p-8 text-left shadow-sm"
+        >
+          <h3 className="text-2xl font-bold leading-snug text-slate-950">
+            {industry}
+          </h3>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* Outcomes */}
       <section className="py-24 bg-white">
