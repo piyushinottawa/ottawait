@@ -343,12 +343,14 @@ export default function HomePage() {
                   and compliance within one integrated business platform.
                 </p>
 
-                <a
-                  href="#contact"
-                  className="mt-8 inline-flex rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white transition hover:bg-blue-500"
-                >
-                  Explore SynexaOne
-                </a>
+<a
+  href="https://www.synexaone.com/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mt-8 inline-flex rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white transition hover:bg-blue-500"
+>
+  Explore SynexaOne
+</a>
               </div>
 
               <div className="grid gap-4 sm:grid-cols-2">
