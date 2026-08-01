@@ -1,92 +1,125 @@
 import Image from "next/image";
 
+const services = [
+  {
+    title: "Technology Strategy",
+    description:
+      "Align technology investments with business priorities through practical strategies and roadmaps.",
+  },
+  {
+    title: "Cybersecurity",
+    description:
+      "Strengthen security, governance, risk management, and regulatory compliance.",
+  },
+  {
+    title: "Cloud Transformation",
+    description:
+      "Modernize infrastructure and applications for greater resilience, scalability, and efficiency.",
+  },
+  {
+    title: "Project & Program Delivery",
+    description:
+      "Lead complex technology initiatives from planning through implementation and operational readiness.",
+  },
+  {
+    title: "Enterprise Architecture",
+    description:
+      "Design secure, integrated, and future-ready technology environments.",
+  },
+  {
+    title: "Digital Transformation",
+    description:
+      "Improve operations through modern technology, automation, and process optimization.",
+  },
+];
+
+const modules = [
+  {
+    name: "CRM",
+    title: "Customer Relationship Management",
+    description:
+      "Manage customers, opportunities, activities, and business relationships.",
+  },
+  {
+    name: "SCM",
+    title: "Supply Chain Management",
+    description:
+      "Improve supplier, procurement, inventory, and operational visibility.",
+  },
+  {
+    name: "DMS",
+    title: "Document Management",
+    description:
+      "Securely organize, approve, control, and access business documents.",
+  },
+  {
+    name: "GRC",
+    title: "Governance, Risk & Compliance",
+    description:
+      "Manage risks, controls, compliance obligations, and governance activities.",
+  },
+];
+
+const industries = [
+  {
+    title: "Government & Public Sector",
+    description:
+      "Secure modernization, governance, and complex program delivery.",
+  },
+  {
+    title: "Healthcare",
+    description:
+      "Reliable technology solutions that protect sensitive information.",
+  },
+  {
+    title: "Manufacturing",
+    description:
+      "Modern operations, stronger supply chains, and improved visibility.",
+  },
+  {
+    title: "Financial Services",
+    description:
+      "Cybersecurity, compliance, resilience, and technology transformation.",
+  },
+  {
+    title: "Retail & Distribution",
+    description:
+      "Connected operations, customer management, and supply-chain efficiency.",
+  },
+  {
+    title: "Small & Medium Business",
+    description:
+      "Practical, scalable technology solutions designed for business growth.",
+  },
+];
+
+const strengths = [
+  "Business-focused approach",
+  "Security by design",
+  "Enterprise delivery experience",
+  "Practical and scalable solutions",
+  "Collaborative leadership",
+  "Measurable business outcomes",
+];
+
 export default function HomePage() {
-  const services = [
-    {
-      title: "Technology Strategy",
-      description:
-        "Practical technology roadmaps aligned with business priorities, growth, and long-term value.",
-    },
-    {
-      title: "Cybersecurity",
-      description:
-        "Governance, risk management, security architecture, and compliance solutions that protect critical operations.",
-    },
-    {
-      title: "Cloud Transformation",
-      description:
-        "Modernize infrastructure and applications to improve scalability, resilience, and operational efficiency.",
-    },
-    {
-      title: "Project & Program Delivery",
-      description:
-        "Lead complex enterprise initiatives from planning and governance through implementation and operational readiness.",
-    },
-    {
-      title: "Enterprise Architecture",
-      description:
-        "Design secure, integrated, and future-ready technology environments that support business growth.",
-    },
-    {
-      title: "Digital Transformation",
-      description:
-        "Improve business processes through modern technology, automation, and enterprise solutions.",
-    },
-  ];
-
-  const modules = [
-    {
-      shortName: "CRM",
-      title: "Customer Relationship Management",
-      description:
-        "Manage customers, opportunities, activities, and business relationships.",
-    },
-    {
-      shortName: "SCM",
-      title: "Supply Chain Management",
-      description:
-        "Improve supplier, procurement, inventory, and operational visibility.",
-    },
-    {
-      shortName: "DMS",
-      title: "Document Management",
-      description:
-        "Organize, approve, secure, and access business documents.",
-    },
-    {
-      shortName: "GRC",
-      title: "Governance, Risk & Compliance",
-      description:
-        "Manage risks, controls, compliance obligations, and governance activities.",
-    },
-  ];
-
-  const industries = [
-    "Government & Public Sector",
-    "Healthcare",
-    "Manufacturing",
-    "Financial Services",
-    "Retail & Distribution",
-    "Small & Medium Business",
-  ];
-
   return (
     <main className="min-h-screen bg-white text-slate-900">
       {/* Header */}
       <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3 lg:px-8">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
           <a href="#home" aria-label="OttawaIT home">
             <Image
               src="/images/logo.png"
               alt="OttawaIT"
-              width={220}
-              height={70}
+              width={360}
+              height={120}
               priority
-              className="h-14 w-auto object-contain"
+              className="h-16 w-auto object-contain md:h-20"
             />
           </a>
 
-          <nav className="hidden items-center gap-7 text-sm font-semibold text-slate-700 lg:flex">
+          <nav className="hidden items-center gap-7 text-base font-semibold text-slate-700 lg:flex">
             <a href="#services" className="transition hover:text-blue-700">
               Services
             </a>
@@ -110,7 +143,7 @@ export default function HomePage() {
 
           <a
             href="#contact"
-            className="rounded-lg bg-blue-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-blue-800"
+            className="rounded-lg bg-blue-700 px-4 py-3 text-sm font-semibold text-white transition hover:bg-blue-800 md:px-6"
           >
             Book Consultation
           </a>
@@ -120,11 +153,11 @@ export default function HomePage() {
       {/* Hero */}
       <section
         id="home"
-        className="scroll-mt-24 overflow-hidden bg-gradient-to-br from-slate-50 via-white to-blue-50"
+        className="scroll-mt-28 overflow-hidden bg-gradient-to-br from-slate-50 via-white to-blue-50"
       >
-        <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-2 lg:px-8 lg:py-24">
+        <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-16 lg:grid-cols-2 lg:px-8 lg:py-20">
           <div>
-            <p className="text-sm font-bold uppercase tracking-[0.16em] text-blue-700">
+            <p className="text-sm font-bold uppercase tracking-[0.14em] text-blue-700">
               Technology Strategy • Cybersecurity • Cloud • SaaS Solutions
             </p>
 
@@ -138,7 +171,7 @@ export default function HomePage() {
               enterprise solutions that create measurable business value.
             </p>
 
-            <div className="mt-9 flex flex-col gap-4 sm:flex-row">
+            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <a
                 href="#contact"
                 className="rounded-lg bg-blue-700 px-7 py-4 text-center font-semibold text-white transition hover:bg-blue-800"
@@ -155,38 +188,28 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="rounded-3xl border border-blue-100 bg-white p-7 shadow-xl shadow-blue-900/10">
-            <div className="rounded-2xl bg-slate-950 p-8 text-white">
+          <div className="relative mx-auto w-full max-w-md">
+            <div className="absolute -inset-4 rounded-full bg-blue-100 blur-2xl" />
+
+            <div className="relative overflow-hidden rounded-3xl border border-blue-100 bg-white p-4 shadow-xl shadow-blue-900/10">
               <Image
-                src="/images/logo.png"
-                alt="OttawaIT"
-                width={250}
-                height={80}
-                className="h-auto w-52 rounded-md bg-white p-2 object-contain"
+                src="/images/piyush.png"
+                alt="Piyush Agarwal"
+                width={600}
+                height={700}
+                priority
+                className="h-auto w-full rounded-2xl object-cover"
               />
+            </div>
 
-              <h2 className="mt-7 text-2xl font-bold leading-snug">
-                Secure technology.
-                <br />
-                Stronger business outcomes.
-              </h2>
-
-              <p className="mt-5 leading-7 text-slate-300">
-                Enterprise technology leadership across strategy,
-                cybersecurity, cloud transformation, architecture, and complex
-                program delivery.
+            <div className="relative mx-auto -mt-8 w-[88%] rounded-2xl border border-slate-200 bg-white p-5 text-center shadow-lg">
+              <p className="text-lg font-bold text-slate-950">
+                Enterprise Technology Leadership
               </p>
 
-              <div className="mt-7 grid gap-3 sm:grid-cols-3">
-                {["Strategy", "Security", "Delivery"].map((item) => (
-                  <div
-                    key={item}
-                    className="rounded-xl bg-white/10 px-4 py-4 text-center text-sm font-semibold"
-                  >
-                    {item}
-                  </div>
-                ))}
-              </div>
+              <p className="mt-1 text-sm text-slate-600">
+                Strategy • Security • Cloud • Program Delivery
+              </p>
             </div>
           </div>
         </div>
@@ -194,7 +217,7 @@ export default function HomePage() {
 
       {/* Trust Strip */}
       <section className="bg-blue-700 text-white">
-        <div className="mx-auto grid max-w-7xl gap-8 px-6 py-8 text-center sm:grid-cols-2 lg:grid-cols-4 lg:px-8">
+        <div className="mx-auto grid max-w-7xl gap-7 px-6 py-7 text-center sm:grid-cols-2 lg:grid-cols-4 lg:px-8">
           <div>
             <p className="text-xl font-bold">25+ Years</p>
             <p className="mt-1 text-sm text-blue-100">
@@ -226,10 +249,10 @@ export default function HomePage() {
       </section>
 
       {/* Services */}
-      <section id="services" className="scroll-mt-24 py-20">
+      <section id="services" className="scroll-mt-28 py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <p className="text-sm font-bold uppercase tracking-[0.16em] text-blue-700">
+            <p className="text-sm font-bold uppercase tracking-[0.14em] text-blue-700">
               Technology Consulting Services
             </p>
 
@@ -238,20 +261,20 @@ export default function HomePage() {
             </h2>
 
             <p className="mt-5 text-lg leading-8 text-slate-600">
-              OttawaIT helps organizations plan, secure, modernize, and deliver
-              technology with confidence.
+              Strategic guidance and disciplined delivery to help organizations
+              plan, secure, modernize, and manage technology.
             </p>
           </div>
 
-          <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-11 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {services.map((service) => (
               <article
                 key={service.title}
-                className="rounded-2xl border border-slate-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg"
+                className="rounded-2xl border border-slate-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:border-blue-300 hover:shadow-lg"
               >
                 <div className="h-1 w-12 rounded-full bg-blue-700" />
 
-                <h3 className="mt-6 text-xl font-bold text-slate-950">
+                <h3 className="mt-5 text-xl font-bold text-slate-950">
                   {service.title}
                 </h3>
 
@@ -264,15 +287,15 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* SaaS */}
+      {/* SaaS Solutions */}
       <section
         id="saas"
-        className="scroll-mt-24 bg-slate-950 py-20 text-white"
+        className="scroll-mt-28 bg-slate-950 py-16 text-white lg:py-20"
       >
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="max-w-3xl">
-            <p className="text-sm font-bold uppercase tracking-[0.16em] text-blue-300">
-              OttawaIT SaaS Solutions
+            <p className="text-sm font-bold uppercase tracking-[0.14em] text-blue-300">
+              SaaS Solutions
             </p>
 
             <h2 className="mt-4 text-3xl font-bold tracking-tight md:text-4xl">
@@ -280,23 +303,15 @@ export default function HomePage() {
             </h2>
 
             <p className="mt-5 text-lg leading-8 text-slate-300">
-              Secure and integrated platforms designed to simplify operations,
+              Secure and integrated platforms that simplify operations,
               improve visibility, and strengthen governance.
             </p>
           </div>
 
-          <div className="mt-12 rounded-3xl border border-white/10 bg-white/5 p-7 md:p-10">
+          <div className="mt-11 rounded-3xl border border-white/10 bg-white/5 p-7 md:p-10">
             <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
               <div>
-                <Image
-                  src="/images/logo.png"
-                  alt="OttawaIT"
-                  width={220}
-                  height={70}
-                  className="h-auto w-44 rounded-md bg-white p-2 object-contain"
-                />
-
-                <p className="mt-7 text-sm font-semibold uppercase tracking-widest text-blue-300">
+                <p className="text-sm font-semibold uppercase tracking-widest text-blue-300">
                   Featured Platform
                 </p>
 
@@ -307,8 +322,8 @@ export default function HomePage() {
                 </p>
 
                 <p className="mt-5 leading-7 text-slate-300">
-                  One integrated platform connecting customers, suppliers,
-                  documents, governance, risk, and compliance.
+                  Connect customers, suppliers, documents, governance, risk,
+                  and compliance within one integrated business platform.
                 </p>
 
                 <a
@@ -322,12 +337,12 @@ export default function HomePage() {
               <div className="grid gap-4 sm:grid-cols-2">
                 {modules.map((module) => (
                   <article
-                    key={module.shortName}
+                    key={module.name}
                     className="rounded-2xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
                   >
-                    <div className="inline-flex rounded-lg bg-blue-600 px-4 py-2 text-sm font-bold">
-                      {module.shortName}
-                    </div>
+                    <span className="inline-flex rounded-lg bg-blue-600 px-4 py-2 text-sm font-bold">
+                      {module.name}
+                    </span>
 
                     <h4 className="mt-5 text-lg font-bold">{module.title}</h4>
 
@@ -343,10 +358,10 @@ export default function HomePage() {
       </section>
 
       {/* Why OttawaIT */}
-      <section className="bg-slate-50 py-20">
+      <section className="bg-slate-50 py-16 lg:py-20">
         <div className="mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-2 lg:px-8">
           <div>
-            <p className="text-sm font-bold uppercase tracking-[0.16em] text-blue-700">
+            <p className="text-sm font-bold uppercase tracking-[0.14em] text-blue-700">
               Why OttawaIT
             </p>
 
@@ -355,30 +370,23 @@ export default function HomePage() {
             </h2>
 
             <p className="mt-5 text-lg leading-8 text-slate-600">
-              OttawaIT combines strategic leadership, cybersecurity expertise,
-              enterprise architecture, and disciplined program delivery to help
-              organizations improve performance and reduce risk.
+              OttawaIT combines technology strategy, cybersecurity expertise,
+              enterprise architecture, and disciplined program delivery to
+              improve performance and reduce organizational risk.
             </p>
           </div>
 
           <div className="grid gap-4 sm:grid-cols-2">
-            {[
-              "Business-First Approach",
-              "Security by Design",
-              "Enterprise Delivery Experience",
-              "Collaborative Partnership",
-              "Practical and Scalable Solutions",
-              "Measurable Business Outcomes",
-            ].map((item) => (
+            {strengths.map((strength) => (
               <div
-                key={item}
+                key={strength}
                 className="flex items-center gap-4 rounded-xl border border-slate-200 bg-white p-5 shadow-sm"
               >
                 <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-blue-100 font-bold text-blue-700">
                   ✓
                 </span>
 
-                <p className="font-semibold text-slate-800">{item}</p>
+                <p className="font-semibold text-slate-800">{strength}</p>
               </div>
             ))}
           </div>
@@ -386,33 +394,37 @@ export default function HomePage() {
       </section>
 
       {/* Industries */}
-      <section id="industries" className="scroll-mt-24 py-20">
+      <section id="industries" className="scroll-mt-28 py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <p className="text-sm font-bold uppercase tracking-[0.16em] text-blue-700">
+            <p className="text-sm font-bold uppercase tracking-[0.14em] text-blue-700">
               Industries
             </p>
 
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-slate-950 md:text-4xl">
-              Industries OttawaIT Serves
+              Industry Experience
             </h2>
 
             <p className="mt-5 text-lg leading-8 text-slate-600">
-              Technology solutions aligned with the operational, security, and
-              regulatory needs of each organization.
+              Technology solutions aligned with each organization&apos;s
+              operational, security, and regulatory requirements.
             </p>
           </div>
 
-          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-11 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {industries.map((industry) => (
-              <div
-                key={industry}
-                className="rounded-2xl border border-slate-200 bg-white p-7 text-center transition hover:border-blue-300 hover:shadow-lg"
+              <article
+                key={industry.title}
+                className="rounded-2xl border border-slate-200 bg-white p-7 transition hover:border-blue-300 hover:shadow-lg"
               >
                 <h3 className="text-xl font-bold text-slate-950">
-                  {industry}
+                  {industry.title}
                 </h3>
-              </div>
+
+                <p className="mt-3 leading-7 text-slate-600">
+                  {industry.description}
+                </p>
+              </article>
             ))}
           </div>
         </div>
@@ -421,31 +433,23 @@ export default function HomePage() {
       {/* Leadership */}
       <section
         id="leadership"
-        className="scroll-mt-24 bg-blue-50 py-20"
+        className="scroll-mt-28 bg-blue-50 py-16 lg:py-20"
       >
-        <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 lg:grid-cols-[0.7fr_1.3fr] lg:px-8">
-          <div className="flex justify-center">
-            <div className="rounded-3xl bg-white p-4 shadow-xl">
+        <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 lg:grid-cols-[0.75fr_1.25fr] lg:px-8">
+          <div className="mx-auto max-w-sm">
+            <div className="overflow-hidden rounded-3xl border border-blue-100 bg-white p-4 shadow-xl">
               <Image
                 src="/images/piyush.png"
                 alt="Piyush Agarwal"
-                width={360}
-                height={420}
-                className="h-auto w-full max-w-sm rounded-2xl object-cover"
+                width={600}
+                height={700}
+                className="h-auto w-full rounded-2xl object-cover"
               />
             </div>
           </div>
 
           <div>
-            <Image
-              src="/images/logo.png"
-              alt="OttawaIT"
-              width={220}
-              height={70}
-              className="h-auto w-44 object-contain"
-            />
-
-            <p className="mt-7 text-sm font-bold uppercase tracking-[0.16em] text-blue-700">
+            <p className="text-sm font-bold uppercase tracking-[0.14em] text-blue-700">
               Leadership
             </p>
 
@@ -453,25 +457,32 @@ export default function HomePage() {
               Experience You Can Trust
             </h2>
 
+            <h3 className="mt-6 text-2xl font-bold text-slate-950">
+              Piyush Agarwal
+            </h3>
+
+            <p className="mt-1 font-semibold text-blue-700">
+              Founder & Technology Leader
+            </p>
+
             <p className="mt-5 text-lg leading-8 text-slate-600">
-              Led by Piyush Agarwal, OttawaIT brings more than 25 years of
-              experience in technology strategy, cybersecurity, cloud
-              transformation, enterprise architecture, governance, and complex
-              program delivery.
+              Piyush brings more than 25 years of experience in technology
+              strategy, cybersecurity, cloud transformation, enterprise
+              architecture, governance, and complex program delivery.
             </p>
 
             <p className="mt-4 text-lg leading-8 text-slate-600">
-              This experience spans government and private-sector
+              His experience spans government and private-sector
               organizations, supporting secure transformation and measurable
               business outcomes.
             </p>
 
-            <div className="mt-8">
+            <div className="mt-7">
               <p className="text-sm font-bold uppercase tracking-widest text-slate-500">
                 Professional Credentials
               </p>
 
-              <p className="mt-3 text-lg font-bold text-slate-900">
+              <p className="mt-3 text-lg font-bold leading-8 text-slate-900">
                 MBA • PMP • CISSP • CISM • ITIL • SAFe Agilist
               </p>
             </div>
@@ -482,18 +493,14 @@ export default function HomePage() {
       {/* Contact */}
       <section
         id="contact"
-        className="scroll-mt-24 bg-slate-950 py-20 text-white"
+        className="scroll-mt-28 bg-slate-950 py-16 text-white lg:py-20"
       >
         <div className="mx-auto max-w-4xl px-6 text-center lg:px-8">
-          <Image
-            src="/images/logo.png"
-            alt="OttawaIT"
-            width={240}
-            height={75}
-            className="mx-auto h-auto w-52 rounded-md bg-white p-2 object-contain"
-          />
+          <p className="text-sm font-bold uppercase tracking-[0.14em] text-blue-300">
+            Start a Conversation
+          </p>
 
-          <h2 className="mt-8 text-3xl font-bold tracking-tight md:text-4xl">
+          <h2 className="mt-4 text-3xl font-bold tracking-tight md:text-4xl">
             Ready to Move Your Technology Initiative Forward?
           </h2>
 
@@ -505,7 +512,7 @@ export default function HomePage() {
 
           <a
             href="mailto:info@ottawait.net"
-            className="mt-9 inline-flex rounded-lg bg-blue-600 px-8 py-4 font-semibold text-white transition hover:bg-blue-500"
+            className="mt-8 inline-flex rounded-lg bg-blue-600 px-8 py-4 font-semibold text-white transition hover:bg-blue-500"
           >
             Book a Consultation
           </a>
@@ -519,16 +526,16 @@ export default function HomePage() {
             <Image
               src="/images/logo.png"
               alt="OttawaIT"
-              width={220}
-              height={70}
-              className="h-auto w-44 rounded-md bg-white p-2 object-contain"
+              width={320}
+              height={105}
+              className="h-16 w-auto rounded-md bg-white p-1 object-contain"
             />
 
             <p className="mt-4 text-sm">
               Technology Strategy • Cybersecurity • Cloud • SaaS Solutions
             </p>
 
-            <p className="mt-2 text-sm">
+            <p className="mt-3 text-sm leading-6">
               1-30 Concourse Gate
               <br />
               Ottawa, Ontario, Canada
